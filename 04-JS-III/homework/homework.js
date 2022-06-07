@@ -220,7 +220,7 @@ function breakStatement(numero) {
     numero2 = numero2 + 2;
     if (numero2 === i) break;
     else {
-      nuevoArray.push(numero2[i]);
+      nuevoArray.push(numero2);
     }
   }
     if (i < 10) {
@@ -241,6 +241,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var numero2 = numero;
+  var nuevoArray = [];
+  for (var i = 0; i < 10; i++){
+    if (i === 5) { 
+      continue;
+    }
+    numero2 = numero2 + 2;
+    nuevoArray.push(numero2);
+  }
+  return nuevoArray;
 }
 
 
